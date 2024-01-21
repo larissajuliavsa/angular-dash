@@ -33,30 +33,65 @@
 
 "customers": [
   {
-    "name": "Alexandre",
-    "gender": "m",
-    "age": 20,
-    "wage": "10000"
+    "name": "Maria Santos",
+    "gender": "f",
+    "age": 29,
+    "wage": 4000
   },
   {
-    "name": "Roberto",
+    "name": "João Silva",
     "gender": "m",
+    "age": 42,
+    "wage": 7000
+  },
+  {
+    "name": "Ana Costa",
+    "gender": "f",
+    "age": 31,
+    "wage": 5500
+  },
+  {
+    "name": "José Oliveira",
+    "gender": "m",
+    "age": 26,
+    "wage": 3500
+  },
+  {
+    "name": "Paula Alves",
+    "gender": "f",
+    "age": 35,
+    "wage": 6000
+  },
+  {
+    "name": "Carlos Rodrigues",
+    "gender": "m",
+    "age": 38,
+    "wage": 8000
+  },
+  {
+    "name": "Beatriz Santos",
+    "gender": "f",
+    "age": 27,
+    "wage": 4500
+  },
+  {
+    "name": "Rafaela Souza",
+    "gender": "f",
     "age": 33,
-    "wage": "11000"
+    "wage": 7000
   },
   {
-    "name": "Maura",
-    "gender": "f",
-    "age": 23,
-    "wage": "12000"
+    "name": "Lucas Almeida",
+    "gender": "m",
+    "age": 29,
+    "wage": 4200
   },
   {
-    "name": "Claudia",
-    "gender": "f",
-    "age": 22,
-    "wage": "13000"
+    "name": "André Costa",
+    "gender": "m",
+    "age": 41,
+    "wage": 9000
   }
-
 ]
 
 }
