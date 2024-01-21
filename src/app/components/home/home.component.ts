@@ -1,4 +1,11 @@
 import { Component } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
+export interface PeriodicElement {
+  name: string;
+  gender: string;
+  age: number;
+  wage: string;
+}
 
 @Component({
   selector: 'app-home',
@@ -6,9 +13,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  title = null
-
-  clientes = [
+  customers = [
     {
       name: 'Alexandre',
       gender: 'm',
@@ -34,4 +39,7 @@ export class HomeComponent {
       wage: '14000'
     }
   ]
+
+  displayedColumns: string[] = ['name', 'gender', 'age', 'wage'];
+  dataSource = new MatTableDataSource(this.customers);
 }
