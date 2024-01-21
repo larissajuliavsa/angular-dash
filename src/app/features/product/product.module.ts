@@ -2,18 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ProductRoutingModule } from './product-routing.module';
-import { CadastroComponent } from './cadastro/cadastro.component';
-import { ListagemComponent } from './listagem/listagem.component';
+import { RegisterComponent } from './register/register.component';
+import { ListComponent } from './list/list.component';
+import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
   declarations: [
-    CadastroComponent,
-    ListagemComponent
+    RegisterComponent,
+    ListComponent
   ],
   imports: [
     CommonModule,
-    ProductRoutingModule
+    ProductRoutingModule,
+    MatCardModule,
+    MatButtonModule
   ]
 })
 export class ProductModule { }

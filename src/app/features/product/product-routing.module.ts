@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListagemComponent } from './listagem/listagem.component';
-import { CadastroComponent } from './cadastro/cadastro.component';
+import { ListComponent } from './list/list.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'listagem', pathMatch: 'full'},
-  { path: 'listagem', component: ListagemComponent},
-  { path: 'new-product', component: CadastroComponent}
+  { path: '', redirectTo: 'list', pathMatch: 'full'},
+  { path: 'list', component: ListComponent},
+  { path: 'new-product', component: RegisterComponent},
+  { path: 'edit-product/:id', component: RegisterComponent }
 ];
 
 @NgModule({
