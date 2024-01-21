@@ -1,0 +1,62 @@
+{
+  "products": [
+    {
+      "name": "Teclado Gamer",
+      "description": "Teclado gamer RGB multi-devices",
+      "imageUrl": "https://m.media-amazon.com/images/I/61nvk16RZrL._AC_SX679_.jpg",
+      "price": "150",
+      "stock": 12
+    },
+    {
+      "name": "Mouse Gamer",
+      "description": "Mouse gamer RGB 1200dpi",
+      "imageUrl": "https://m.media-amazon.com/images/I/51H+ecG+GgL._AC_SX679_.jpg",
+      "price": "59",
+      "stock": 56
+    },
+    {
+      "name": "Monitor Ultra Wide",
+      "description": "Monitor Ultra Wide 29 polegadas IPS 144ms",
+      "imageUrl": "https://m.media-amazon.com/images/I/51Ufkd4a13L._AC_SX679_.jpg",
+      "price": "1699",
+      "stock": 5
+    },
+    {
+      "name": "Notebook Gamer",
+      "description": "Notebook Gamer com placa dedicada",
+      "imageUrl": "https://m.media-amazon.com/images/I/61tegGxILZL._AC_SX679_.jpg",
+      "price": "5000",
+      "stock": 2
+    }
+
+],
+
+"customers": [
+  {
+    "name": "Alexandre",
+    "gender": "m",
+    "age": 20,
+    "wage": "10000"
+  },
+  {
+    "name": "Roberto",
+    "gender": "m",
+    "age": 33,
+    "wage": "11000"
+  },
+  {
+    "name": "Maura",
+    "gender": "f",
+    "age": 23,
+    "wage": "12000"
+  },
+  {
+    "name": "Claudia",
+    "gender": "f",
+    "age": 22,
+    "wage": "13000"
+  }
+
+]
+
+}
