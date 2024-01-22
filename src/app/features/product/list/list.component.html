@@ -1,4 +1,16 @@
+
+
 <div class="product-container">
+    <div class="example-button-container">
+        <button
+            mat-mini-fab color="accent"
+            matTooltip="Create new product"
+            aria-label="New product"
+            (click)="createNewProduct()"
+        >
+          <mat-icon>add</mat-icon>
+        </button>
+      </div>
     <mat-card class="card" *ngFor="let product of products" (click)="selectProduct(product)">
         <mat-card-header>
             <mat-card-title class="card-title">{{product.name}}</mat-card-title>

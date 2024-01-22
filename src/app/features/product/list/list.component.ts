@@ -25,4 +25,8 @@ export class ListComponent implements OnInit {
   selectProduct(product: Product) {
     this.router.navigate(['product', 'edit-product', product.id])
   }
+  
+  createNewProduct() {
+    this.router.navigate(['product', 'new-product'])    
+  }
 }
