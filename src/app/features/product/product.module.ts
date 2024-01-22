@@ -6,6 +6,11 @@ import { RegisterComponent } from './register/register.component';
 import { ListComponent } from './list/list.component';
 import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule} from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -17,7 +22,12 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     ProductRoutingModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatIconModule,
+    MatTooltipModule,
   ]
 })
 export class ProductModule { }

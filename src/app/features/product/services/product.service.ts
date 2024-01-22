@@ -10,9 +10,7 @@ export class ProductService {
 
   private baseURL = 'http://localhost:3000'
 
-  constructor(private http: HttpClient) { 
-
-  }
+  constructor(private http: HttpClient) {}
 
   getProducts(): Observable<Products> {
     return this.http.get<Products>(`${this.baseURL}/products`)
@@ -20,5 +18,13 @@ export class ProductService {
 
   getProductById(id: string): Observable<Product>{
     return this.http.get<Product>(`${this.baseURL}/products/${id}`)
+  }
+
+  updateProduct(product: Product): Observable<any> {
+    return this.http.put(`${this.baseURL}/products/${product.id}`, product)
+  }
+
+  createProduct(product: Product): Observable<any> {
+    return this.http.post(`${this.baseURL}/products`, product)
   }
 }
