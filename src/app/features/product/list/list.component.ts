@@ -29,4 +29,11 @@ export class ListComponent implements OnInit {
   createNewProduct() {
     this.router.navigate(['product', 'new-product'])    
   }
+
+  deleteProduct(product: Product) {
+    this.productService.deleteProduct(product.id)
+    .subscribe(response => {
+      this.router.navigate(['product'])    
+    })
+  }
 }

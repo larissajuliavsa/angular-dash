@@ -1,8 +1,9 @@
-
 .product-container {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    width: 90%;
+    margin: 32px auto;
 }
 
 .card {
@@ -48,10 +49,20 @@
 
 
     &-content {
-        display: flex;
         gap: 24px;
         padding: 0 16px;
         font-weight: 500;
+        display: flex;
+        justify-content: space-between;
     }
 }
-  
+
+mat-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create-product {
+  float: right;  
+}

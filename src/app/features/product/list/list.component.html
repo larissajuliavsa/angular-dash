@@ -1,19 +1,27 @@
-
-
-<div class="product-container">
-    <div class="example-button-container">
-        <button
-            mat-mini-fab color="accent"
-            matTooltip="Create new product"
-            aria-label="New product"
-            (click)="createNewProduct()"
-        >
-          <mat-icon>add</mat-icon>
-        </button>
-      </div>
+<div class="create-product container">
+    <button
+        mat-mini-fab color="accent"
+        matTooltip="Create new product"
+        aria-label="New product"
+        (click)="createNewProduct()"
+    >
+      <mat-icon>add</mat-icon>
+    </button>
+</div>
+<div class="product-container container">
     <mat-card class="card" *ngFor="let product of products" (click)="selectProduct(product)">
         <mat-card-header>
             <mat-card-title class="card-title">{{product.name}}</mat-card-title>
+            <div class="example-button-container">
+                <button
+                    mat-mini-fab color="accent"
+                    matTooltip="Delete product"
+                    aria-label="New product"
+                    (click)="deleteProduct(product)"
+                >
+                  <mat-icon>delete</mat-icon>
+                </button>
+            </div>
         </mat-card-header>
         <img mat-card-image [src]="product.imageUrl" alt="Photo of {{ product.name }}">
         <mat-card-content>
