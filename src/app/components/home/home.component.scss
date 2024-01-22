@@ -1,0 +1,15 @@
+.home-table {
+    width: 90%;
+    min-width: 0;
+    margin: 0 auto;
+
+    &-header {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+}
+
+.mat-mdc-row.mdc-data-table__row.cdk-row:hover {
+    background-color: #3f51b515;
+}
