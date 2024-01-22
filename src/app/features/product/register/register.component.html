@@ -1,25 +1,29 @@
 <h1>{{pageTitle}}</h1>
 
-<form class="form">
+<form class="form" [formGroup]="formRegisterProduct">
     <mat-form-field class="full-width">
         <mat-label>Product</mat-label>
-        <input matInput placeholder="Notebook Gamer" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+        <input matInput placeholder="Notebook Gamer" min="3" formControlName="name">
+        <mat-error>Please enter a value for the product name</mat-error>
     </mat-form-field>
     
     <mat-form-field class="full-width">
         <mat-label>Price</mat-label>
-        <input matInput placeholder="5,000.00" [(ngModel)]="price" [ngModelOptions]="{standalone: true}">
+        <input matInput placeholder="5,000.00" min="1" formControlName="price">
+        <mat-error>Product price cannot be empty</mat-error>
     </mat-form-field>
 
     <mat-form-field class="full-width">
         <mat-label>Description</mat-label>
-        <textarea matInput placeholder="Notebook Gamer com placa dedicada" [(ngModel)]="description" [ngModelOptions]="{standalone: true}"></textarea>
+        <textarea matInput placeholder="Notebook Gamer com placa dedicada" formControlName="description"></textarea>        
+        <mat-error>Don't forget to fill in the product description</mat-error>
     </mat-form-field>
 
     <mat-form-field class="full-width">
         <mat-label>Quantity</mat-label>
-        <input type="number" matInput placeholder="24" [(ngModel)]="stock" [ngModelOptions]="{standalone: true}">
+        <input type="number" matInput placeholder="24" min="1" formControlName="stock">
+        <mat-error>Product stock field is required</mat-error>
     </mat-form-field>
 
-    <button mat-raised-button color="primary" (click)="saveProduct()">Register</button>
+    <button mat-raised-button color="primary" (click)="saveProduct()" [disabled]="!formRegisterProduct.valid">Register</button>
 </form>
